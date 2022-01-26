@@ -3,3 +3,9 @@
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .item-container {
+    gap: 2rem;
+  }
+}
