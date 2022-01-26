@@ -2,6 +2,11 @@
   .flex {
     flex-direction: column;
   }
+
+  .pricing-container {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
