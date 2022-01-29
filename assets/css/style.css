@@ -17,83 +17,104 @@ body {
   background: #f7f7f7;
 }
 
-.pricing-container {
-  margin: auto;
-  max-width: 80rem;
+.my-story {
+  width: 100%;
 }
 
-h1,
-h2,
-h3 {
+.my-story .hero-container {
+  width: 100%;
+  height: 50rem;
+  background-image: linear-gradient(
+      to top,
+      rgba(2, 2, 2, 0.1),
+      rgba(2, 2, 2, 0.1)
+    ),
+    url(https://t7245190.p.clickup-attachments.com/t7245190/8ae5fcdd-7886-4911-8fa4-9d626eff5f39/image_picker_44D90280-3A3F-4176-824B-ABED2EBE76A2-1328-0000004233C35115.jpg);
+  background-position: 50% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.my-story h3 {
+  color: #f7f7f7;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  align-self: flex-end;
 }
 
-h1,
-h2 {
+.my-story .content {
+  max-width: 90rem;
+  margin: 2rem auto;
+}
+
+.my-story p {
+  margin: 1rem 0;
   text-align: center;
+  font-size: 1.3rem;
+  line-height: normal;
 }
 
-h1 {
-  margin: 3rem 0;
-}
-
-h2 {
-  padding: 2rem 0;
+.first-page {
+  margin: 5rem auto;
+  max-width: 100rem;
 }
 
 .flex {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
-.flex-item {
+.parent {
   flex: 1;
-}
-
-.float {
-  float: left;
-}
-
-.item-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.8rem 1rem;
-  border-top: 1px solid #eee;
+  border-radius: 1rem;
+  height: 50rem;
+  transition: all 0.2s ease;
+  overflow: hidden;
 }
 
 .bg-img {
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-.event-makeup {
-  background-image: linear-gradient(
-      rgba(34, 34, 34, 0.7),
-      rgba(34, 34, 34, 0.7)
-    ),
-    url(https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-  color: #f7f7f7;
+.child {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6rem;
 }
 
-.bridal-wedding {
-  background-image: linear-gradient(
-      rgba(34, 34, 34, 0.5),
-      rgba(34, 34, 34, 0.5)
-    ),
-    url(https://images.unsplash.com/photo-1549488497-94b52bddac5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-  color: #f7f7f7;
+.parent:hover .child {
+  transform: scale(1.1);
 }
 
-.savannah-note {
-  margin: 0.8rem 1rem;
-  font-style: italic;
-  text-align: center;
+.cosmetics {
+  background-image: url(https://cdn.shopify.com/s/files/1/0566/4358/4057/files/image_picker_A254A6F9-158B-42AE-9721-75451B87D2AD-51452-00000C7C0197A778.jpg?v=1643362220);
+}
+
+.booking {
+  background-image: url(https://t7245190.p.clickup-attachments.com/t7245190/0a926505-0ab5-42da-8f46-44d2a5ec6221/image_picker_E9715543-E37B-4BC3-8FE0-79370C905841-62146-00000E2AB7259E8E.jpg);
+}
+
+.first-page a:link,
+.first-page a:visited {
+  text-decoration: none !important;
+}
+
+.first-page h2 {
+  color: #f7f7f7 !important;
   text-transform: uppercase;
-  font-weight: 700;
-}
-
-.price {
-  font-weight: 700;
+  background: rgba(255, 192, 203, 0.5);
+  padding: 3rem;
+  font-size: 1.5rem !important;
+  align-self: flex-end;
+  border-radius: 0.5rem;
+  text-align: center !important;
 }

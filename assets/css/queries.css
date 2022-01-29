@@ -1,16 +1,13 @@
 @media only screen and (max-width: 768px) {
+  .parent {
+    height: 100rem;
+  }
+
   .flex {
     flex-direction: column;
   }
 
-  .pricing-container {
-    margin: auto;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .item-container {
-    /* gap: 2rem; */
+  .child {
+    padding: 6rem;
   }
 }
